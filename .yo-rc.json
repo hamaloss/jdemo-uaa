@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "fi.tieto.teco.demo"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "uaa",
+    "baseName": "uaa",
+    "packageName": "fi.tieto.teco.demo",
+    "packageFolder": "fi/tieto/teco/demo",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzQ5YjhhMzE3NGU5ZWNiYTNjMGEyY2ExNGE5OWI0NmVmMmVmNDIxODNkMDc1NGMzNDM2OWJmODI5ZDNhM2I2NDViM2I2NGQ4NDkzODIxY2M3MzFkNzlhNTdhMzAwZTM5ZDM5ODkzMzZkMjFiNWNjMGNkMTJkODE4ZWI0YmU1MWY=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true
+  }
+}
