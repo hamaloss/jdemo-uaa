@@ -33,7 +33,11 @@ node {
 	withCredentials([usernamePassword(credentialsId: 'region-harbor', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 		sh "docker login -u '$USERNAME' -p $PASSWORD harbor.teco.1-4.fi.teco.online"
 		sh "docker tag uaa:latest harbor.teco.1-4.fi.teco.online/jdemo/uaa:latest"
+		sh "docker tag uaa:latest harbor.teco.1-4.fi.teco.online/jdemo/uaa:${env.BUILD_NUMBER}"
 		sh "docker push harbor.teco.1-4.fi.teco.online/jdemo/uaa:latest"
+		sh "docker push harbor.teco.1-4.fi.teco.online/jdemo/uaa:${env.BUILD_NUMBER}"
 	}
+	sh "echo TAG=${env.BUILD_NUMBER} > build.properties"
+	archiveArtifacts artifacts: 'build.properties'
     }
 }
